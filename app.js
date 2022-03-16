@@ -13,7 +13,7 @@ app.use(cors())
 //Rotas
 const Routes = require('./routes/api')
 //Banco de dados
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Admin:tm9bBE0afM71S6Ch@cluster0.roavo.mongodb.net/HelloWorld?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGODB_URI)
 
 mongoose.connection.on('connected', () => {
     console.log(`conectado ao banco de dados`)
