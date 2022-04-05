@@ -27,7 +27,7 @@ exports.update = (req, res, err) => {
         } else {
             res.send(result)
         }
-    })
+    }).catch(err)
 }
 //DELETAR usuários
 exports.delete = (req, res, err) => {
